@@ -1,0 +1,1045 @@
+<!DOCTYPE CrossStudio_Group_Values>
+<propertyGroups>
+  <group short="Target Processor" group="Build Options" long="Select a set of target options" name="Target" default="STM32F765BI">
+    <groupEntry name="STM32F745ZG" family="STM32F745">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F745ZG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F745ZG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F745" />
+      <cdefine name="STM32F745xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F745_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F745ZE" family="STM32F745">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00080000;ROM;0x08000000;0x00080000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F745ZE" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F745ZE_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F745" />
+      <cdefine name="STM32F745xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F745_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F745VG" family="STM32F745">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F745VG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F745VG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F745" />
+      <cdefine name="STM32F745xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F745_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F745VE" family="STM32F745">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00080000;ROM;0x08000000;0x00080000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F745VE" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F745VE_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F745" />
+      <cdefine name="STM32F745xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F745_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F745IG" family="STM32F745">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F745IG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F745IG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F745" />
+      <cdefine name="STM32F745xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F745_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F745IE" family="STM32F745">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00080000;ROM;0x08000000;0x00080000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F745IE" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F745IE_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F745" />
+      <cdefine name="STM32F745xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F745_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F746ZG" family="STM32F746">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F746ZG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F746ZG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F746" />
+      <cdefine name="STM32F746xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F746_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F746VG" family="STM32F746">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F746VG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F746VG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F746" />
+      <cdefine name="STM32F746xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F746_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F746IG" family="STM32F746">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F746IG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F746IG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F746" />
+      <cdefine name="STM32F746xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F746_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F746BG" family="STM32F746">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F746BG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F746BG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F746" />
+      <cdefine name="STM32F746xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F746_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F746NG" family="STM32F746">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F746NG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F746NG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F746" />
+      <cdefine name="STM32F746xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F746_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F746ZE" family="STM32F746">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00080000;ROM;0x08000000;0x00080000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F746ZE" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F746ZE_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F746" />
+      <cdefine name="STM32F746xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F746_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F746VE" family="STM32F746">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00080000;ROM;0x08000000;0x00080000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F746VE" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F746VE_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F746" />
+      <cdefine name="STM32F746xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F746_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F746IE" family="STM32F746">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00080000;ROM;0x08000000;0x00080000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F746IE" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F746IE_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F746" />
+      <cdefine name="STM32F746xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F746_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F746BE" family="STM32F746">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00080000;ROM;0x08000000;0x00080000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F746BE" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F746BE_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F746" />
+      <cdefine name="STM32F746xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F746_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F746NE" family="STM32F746">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00080000;ROM;0x08000000;0x00080000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F746NE" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F746NE_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F746" />
+      <cdefine name="STM32F746xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F746_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F756ZG" family="STM32F756">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F756ZG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F756ZG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F756" />
+      <cdefine name="STM32F756xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F756_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F756VG" family="STM32F756">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F756VG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F756VG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F756" />
+      <cdefine name="STM32F756xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F756_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F756IG" family="STM32F756">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F756IG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F756IG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F756" />
+      <cdefine name="STM32F756xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F756_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F756BG" family="STM32F756">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F756BG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F756BG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F756" />
+      <cdefine name="STM32F756xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F756_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F756NG" family="STM32F756">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00010000;RAM;0x20010000;0x00040000" />
+      <property name="arm_target_device_name" value="STM32F756NG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x6_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F756NG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x6_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F756" />
+      <cdefine name="STM32F756xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F756_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F765BG" family="STM32F765">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F765BG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F765BG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F765" />
+      <cdefine name="STM32F765xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F765_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F765BI" family="STM32F765">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F765BI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F765BI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F765" />
+      <cdefine name="STM32F765xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F765_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F765IG" family="STM32F765">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F765IG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F765IG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F765" />
+      <cdefine name="STM32F765xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F765_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F765II" family="STM32F765">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F765II" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F765II_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F765" />
+      <cdefine name="STM32F765xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F765_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F765NG" family="STM32F765">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F765NG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F765NG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F765" />
+      <cdefine name="STM32F765xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F765_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F765NI" family="STM32F765">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F765NI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F765NI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F765" />
+      <cdefine name="STM32F765xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F765_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F765VG" family="STM32F765">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F765VG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F765VG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F765" />
+      <cdefine name="STM32F765xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F765_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F765VI" family="STM32F765">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F765VI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F765VI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F765" />
+      <cdefine name="STM32F765xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F765_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F765ZG" family="STM32F765">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F765ZG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F765ZG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F765" />
+      <cdefine name="STM32F765xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F765_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F765ZI" family="STM32F765">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F765ZI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x5_v1r1_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F765ZI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F765" />
+      <cdefine name="STM32F765xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F765_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F767BI" family="STM32F767">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F767BI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F767BI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F767" />
+      <cdefine name="STM32F767xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F767_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F767BG" family="STM32F767">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F767BG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F767BG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F767" />
+      <cdefine name="STM32F767xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F767_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F767NI" family="STM32F767">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F767NI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F767NI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F767" />
+      <cdefine name="STM32F767xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F767_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F767NG" family="STM32F767">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F767NG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F767NG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F767" />
+      <cdefine name="STM32F767xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F767_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F767II" family="STM32F767">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F767II" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F767II_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F767" />
+      <cdefine name="STM32F767xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F767_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F767IG" family="STM32F767">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F767IG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F767IG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F767" />
+      <cdefine name="STM32F767xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F767_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F767ZI" family="STM32F767">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F767ZI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F767ZI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F767" />
+      <cdefine name="STM32F767xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F767_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F767ZG" family="STM32F767">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F767ZG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F767ZG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F767" />
+      <cdefine name="STM32F767xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F767_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F767VI" family="STM32F767">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F767VI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F767VI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F767" />
+      <cdefine name="STM32F767xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F767_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F767VG" family="STM32F767">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F767VG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F767VG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F767" />
+      <cdefine name="STM32F767xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F767_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F768AI" family="STM32F768">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000" />
+      <property name="arm_target_device_name" value="STM32F768AI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F768AI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x9_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F768" />
+      <cdefine name="STM32F767xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F768_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F769BI" family="STM32F769">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F769BI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F769BI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x9_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F769" />
+      <cdefine name="STM32F769xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F769_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F769BG" family="STM32F769">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F769BG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F769BG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x9_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F769" />
+      <cdefine name="STM32F769xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F769_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F769NI" family="STM32F769">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F769NI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F769NI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x9_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F769" />
+      <cdefine name="STM32F769xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F769_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F769NG" family="STM32F769">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F769NG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F769NG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x9_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F769" />
+      <cdefine name="STM32F769xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F769_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F769II" family="STM32F769">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F769II" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F769II_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x9_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F769" />
+      <cdefine name="STM32F769xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F769_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F769IG" family="STM32F769">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F769IG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F769IG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x9_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F769" />
+      <cdefine name="STM32F769xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F769_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F769AI" family="STM32F769">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F769AI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F769AI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x9_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F769" />
+      <cdefine name="STM32F769xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F769_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F769AG" family="STM32F769">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00100000;ROM;0x08000000;0x00100000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F769AG" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F769AG_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x9_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F769" />
+      <cdefine name="STM32F769xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F769_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F777BI" family="STM32F777">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F777BI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F777BI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F777" />
+      <cdefine name="STM32F777xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F777_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F777NI" family="STM32F777">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F777NI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F777NI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F777" />
+      <cdefine name="STM32F777xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F777_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F777II" family="STM32F777">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F777II" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F777II_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F777" />
+      <cdefine name="STM32F777xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F777_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F777ZI" family="STM32F777">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F777ZI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F777ZI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F777" />
+      <cdefine name="STM32F777xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F777_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F777VI" family="STM32F777">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F777VI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x7_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F777VI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x7_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F777" />
+      <cdefine name="STM32F777xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F777_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F778AI" family="STM32F778">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000" />
+      <property name="arm_target_device_name" value="STM32F778AI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F778AI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x9_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F778" />
+      <cdefine name="STM32F777xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F778_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F779BI" family="STM32F779">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F779BI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F779BI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x9_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F779" />
+      <cdefine name="STM32F779xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F779_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F779NI" family="STM32F779">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F779NI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F779NI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x9_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F779" />
+      <cdefine name="STM32F779xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F779_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F779II" family="STM32F779">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F779II" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F779II_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x9_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F779" />
+      <cdefine name="STM32F779xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F779_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+    <groupEntry name="STM32F779AI" family="STM32F779">
+      <property name="arm_architecture" value="v7EM" />
+      <property name="arm_core_type" value="Cortex-M7" />
+      <property name="arm_endian" value="Little" />
+      <property name="arm_fpu_type" value="FPv5-D16" />
+      <property name="arm_fp_abi" value="Hard" />
+      <property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000" />
+      <property name="arm_target_device_name" value="STM32F779AI" />
+      <property name="debug_register_definition_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml" />
+      <property name="linker_memory_map_file" value="$(PackagesDir)/STM32F7xx/XML/STM32F779AI_MemoryMap.xml" />
+      <property name="macros" value="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x9_v1r2_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F779" />
+      <cdefine name="STM32F779xx" />
+      <cdefine name="__STM32F7xx_FAMILY" />
+      <cdefine name="__STM32F779_SUBFAMILY" />
+      <cdefine name="ARM_MATH_CM7" />
+      <cinclude value="$(PackagesDir)/STM32F7xx/CMSIS/Device/Include" />
+    </groupEntry>
+  </group>
+  <group short="Section Placement" group="Build Options" long="Select a set of options based on section placement." name="Placement" default="Flash">
+    <groupEntry name="Flash">
+      <property name="linker_section_placement_file" value="$(StudioDir)/targets/Cortex_M/flash_placement.xml" />
+      <cdefine name="FLASH_PLACEMENT" value="1" />
+    </groupEntry>
+    <groupEntry name="Flash Vectors In RAM">
+      <property name="linker_section_placement_file" value="$(StudioDir)/targets/Cortex_M/flash_placement.xml" />
+      <cdefine name="FLASH_VECTORS_IN_RAM_PLACEMENT" value="1" />
+      <cdefine name="VECTORS_IN_RAM" value="1" />
+    </groupEntry>
+    <groupEntry name="Flash Copy To RAM">
+      <property name="linker_section_placement_file" value="$(StudioDir)/targets/Cortex_M/flash_to_ram_placement.xml" />
+      <cdefine name="FLASH_COPY_TO_RAM_PLACEMENT" value="1" />
+      <cdefine name="VECTORS_IN_RAM" value="1" />
+    </groupEntry>
+    <groupEntry name="RAM">
+      <property name="linker_section_placement_file" value="$(StudioDir)/targets/Cortex_M/ram_placement.xml" />
+      <cdefine name="RAM_PLACEMENT" value="1" />
+    </groupEntry>
+  </group>
+</propertyGroups>

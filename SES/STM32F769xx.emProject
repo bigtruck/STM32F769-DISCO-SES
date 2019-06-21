@@ -1,0 +1,713 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="STM32F769xx" target="8" version="2">
+  <project Name="STM32F769xx">
+    <configuration
+      Name="Common"
+      Target="STM32F769NI"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M7"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv5-D16"
+      arm_linker_heap_size="8192"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="8192"
+      arm_linker_variant="GNU"
+      arm_simulator_memory_simulation_parameter="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000"
+      arm_target_device_name="STM32F769NI"
+      arm_target_interface_type="SWD"
+      c_preprocessor_definitions="STM32F769xx;USE_HAL_DRIVER;CORE_CM7"
+      c_user_include_directories="../Source/Drivers/CMSIS/Device/ST/STM32F7xx/Include;../Source/Drivers/CMSIS/Core/Include;../Source/App;../Source/Drivers/STM32F7xx_HAL_Driver/Inc;../Source/Drivers/BSP;../Source/FreeRTOS/portable/GCC/ARM_CM7/r0p1;../Source/FreeRTOS/include;../Source/FreeRTOS/CMSIS_RTOS;../Source/lvgl;../Source/lwip/include;../Source/lwip/system;../Source/lwip/apps/http"
+      debug_register_definition_file="$(PackagesDir)/STM32F7xx/XML/STM32F7x9_v1r2_Registers.xml"
+      debug_target_connection="J-Link"
+      gcc_debugging_level="None"
+      gcc_entry_point="Reset_Handler"
+      link_linker_script_file=""
+      linker_memory_map_file="$(ProjectDir)/STM32F769NI_MemoryMap.xml"
+      linker_output_format="hex"
+      linker_section_placement_file="$(ProjectDir)/flash_placement.xml"
+      linker_section_placements_segments=""
+      macros="DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F769"
+      project_directory=""
+      project_type="Executable"
+      property_groups_file_path="$(ProjectDir)/property_groups.xml" />
+    <folder Name="App">
+      <file file_name="../Source/App/main.c" />
+      <file file_name="../Source/App/task_GUI.c" />
+      <file file_name="../Source/App/task_GUI.h" />
+      <file file_name="../Source/App/task_Led.c" />
+      <file file_name="../Source/App/task_Led.h" />
+      <file file_name="../Source/App/task_SockerSeriver.c" />
+      <file file_name="../Source/App/task_SockerSeriver.h" />
+    </folder>
+    <folder Name="Drivers">
+      <folder Name="BSP">
+        <file file_name="../Source/Drivers/BSP/bsp.c" />
+        <file file_name="../Source/Drivers/BSP/bsp.h" />
+        <file file_name="../Source/Drivers/BSP/ft6x06.c" />
+        <file file_name="../Source/Drivers/BSP/ft6x06.h" />
+        <file file_name="../Source/Drivers/BSP/isr.c" />
+        <file file_name="../Source/Drivers/BSP/isr.h" />
+        <file file_name="../Source/Drivers/BSP/otm8009a.c" />
+        <file file_name="../Source/Drivers/BSP/otm8009a.h" />
+        <file file_name="../Source/Drivers/BSP/stm32f769i_discovery.c" />
+        <file file_name="../Source/Drivers/BSP/stm32f769i_discovery.h" />
+        <file file_name="../Source/Drivers/BSP/stm32f769i_discovery_lcd.c" />
+        <file file_name="../Source/Drivers/BSP/stm32f769i_discovery_lcd.h" />
+        <file file_name="../Source/Drivers/BSP/stm32f769i_discovery_sdram.c" />
+        <file file_name="../Source/Drivers/BSP/stm32f769i_discovery_sdram.h" />
+        <file file_name="../Source/Drivers/BSP/stm32f769i_discovery_ts.c" />
+        <file file_name="../Source/Drivers/BSP/stm32f769i_discovery_ts.h" />
+        <file file_name="../Source/Drivers/BSP/ethernetif.c">
+          <configuration Name="Debug" build_exclude_from_build="No" />
+        </file>
+      </folder>
+      <folder Name="STM32F7xx_HAL_Driver">
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cec.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.c">
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.c">
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cryp.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cryp_ex.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dac.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dac_ex.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dcmi.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dcmi_ex.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dfsdm.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c">
+          <configuration Name="Debug" build_exclude_from_build="No" />
+          <configuration Name="Release" build_exclude_from_build="No" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dsi.c">
+          <configuration Name="Debug" build_exclude_from_build="No" />
+          <configuration Name="Release" build_exclude_from_build="No" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.c">
+          <configuration Name="Debug" build_exclude_from_build="No" />
+          <configuration Name="Release" build_exclude_from_build="No" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c">
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_hash.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_hash_ex.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_hcd.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c">
+          <configuration Name="Debug" build_exclude_from_build="No" />
+          <configuration Name="Release" build_exclude_from_build="No" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c">
+          <configuration Name="Debug" build_exclude_from_build="No" />
+          <configuration Name="Release" build_exclude_from_build="No" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2s.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_irda.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_iwdg.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_jpeg.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_lptim.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.c">
+          <configuration Name="Debug" build_exclude_from_build="No" />
+          <configuration Name="Release" build_exclude_from_build="No" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc_ex.c">
+          <configuration Name="Debug" build_exclude_from_build="No" />
+          <configuration Name="Release" build_exclude_from_build="No" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_mdios.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_mmc.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_msp_template.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_nand.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_nor.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rng.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rtc.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rtc_ex.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sai.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sai_ex.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sd.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.c">
+          <configuration Name="Release" build_exclude_from_build="No" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_smartcard.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_smartcard_ex.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_smbus.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi_ex.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sram.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c">
+          <configuration Name="Debug" build_exclude_from_build="No" />
+          <configuration Name="Release" build_exclude_from_build="No" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c">
+          <configuration Name="Debug" build_exclude_from_build="No" />
+          <configuration Name="Release" build_exclude_from_build="No" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_usart.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_wwdg.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_adc.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_crc.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_dac.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_dma.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_dma2d.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_exti.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.c">
+          <configuration Name="Debug" build_exclude_from_build="No" />
+          <configuration Name="Release" build_exclude_from_build="No" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_gpio.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_i2c.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_lptim.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_pwr.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_rcc.c" />
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_rng.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_rtc.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_sdmmc.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_spi.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_tim.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usart.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_utils.c">
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../Source/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_timebase_tim_template.c" />
+      </folder>
+    </folder>
+    <configuration
+      Name="Debug"
+      Target="STM32F769NI"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M7"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv5-D16"
+      arm_linker_heap_size="1024"
+      arm_linker_stack_size="2048"
+      arm_linker_variant="GNU"
+      arm_simulator_memory_simulation_parameter="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000"
+      arm_target_device_name="STM32F769NI"
+      c_preprocessor_definitions="__DEBUG;STM32F769xx;USE_HAL_DRIVER"
+      c_user_include_directories=""
+      debug_RTTCB="_SEGGER_RTT"
+      debug_enable_RTT="Yes"
+      debug_register_definition_file="$(ProjectDir)/STM32F7x9_v1r2_Registers.xml"
+      gcc_debugging_level="Level 3"
+      gcc_dwarf_version="None"
+      gcc_entry_point="Reset_Handler"
+      gcc_optimization_level="Debug"
+      link_linker_script_file="$(ProjectDir)/STM32F769NI_MemoryMap.xml"
+      linker_memory_map_file="$(ProjectDir)/STM32F769NI_MemoryMap.xml"
+      linker_section_placement_file="$(ProjectDir)/flash_placement.xml"
+      linker_section_placements_segments=""
+      macros="DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F769"
+      property_groups_file_path="$(ProjectDir)/property_groups.xml"
+      target_reset_script="Reset()"
+      target_trace_initialize_script="EnableTrace(&quot;$(TraceInterfaceType)&quot;)" />
+    <folder Name="Startup">
+      <file file_name="STM32F7xx_Startup.s" />
+      <file file_name="STM32F7x9_v1r2_Vectors.s" />
+      <file file_name="thumb_crt0.s">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../Source/Drivers/BSP/system_stm32f7xx.c" />
+    </folder>
+    <folder Name="Script Files">
+      <file file_name="STM32F7xx_Target.js">
+        <configuration Name="Common" file_type="Reset Script" />
+      </file>
+      <configuration Name="Debug" build_exclude_from_build="No" />
+    </folder>
+    <folder Name="RTT">
+      <file file_name="RTT/SEGGER_RTT.c" />
+      <file file_name="RTT/SEGGER_RTT.h" />
+      <file file_name="RTT/SEGGER_RTT_Conf.h" />
+      <file file_name="RTT/SEGGER_RTT_SES.c" />
+      <configuration Name="Release" build_exclude_from_build="Yes" />
+    </folder>
+    <configuration
+      Name="Release"
+      debug_RTTCB=""
+      debug_enable_RTT="No"
+      gcc_optimization_level="Level 3" />
+    <folder Name="FreeRTOS">
+      <file file_name="../Source/FreeRTOS/event_groups.c" />
+      <file file_name="../Source/FreeRTOS/list.c" />
+      <file file_name="../Source/FreeRTOS/queue.c" />
+      <file file_name="../Source/FreeRTOS/tasks.c" />
+      <file file_name="../Source/FreeRTOS/timers.c" />
+      <file file_name="../Source/FreeRTOS/portable/GCC/ARM_CM7/r0p1/port.c" />
+      <file file_name="../Source/FreeRTOS/portable/MemMang/heap_4.c" />
+      <folder Name="CMSIS_RTOS">
+        <file file_name="../Source/FreeRTOS/CMSIS_RTOS/cmsis_os.c" />
+      </folder>
+    </folder>
+    <folder Name="lvgl">
+      <folder Name="lvgl">
+        <folder Name="lv_core">
+          <file file_name="../Source/lvgl/lvgl/lv_core/lv_group.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_core/lv_group.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_core/lv_indev.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_core/lv_indev.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_core/lv_lang.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_core/lv_lang.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_core/lv_obj.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_core/lv_obj.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_core/lv_refr.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_core/lv_refr.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_core/lv_style.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_core/lv_style.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_core/lv_vdb.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_core/lv_vdb.h" />
+        </folder>
+        <folder Name="lv_draw">
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_arc.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_arc.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_img.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_img.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_label.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_label.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_line.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_line.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_rbasic.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_rbasic.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_rect.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_rect.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_triangle.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_triangle.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_vbasic.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_draw/lv_draw_vbasic.h" />
+        </folder>
+        <folder Name="lv_fonts">
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_builtin.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_builtin.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_dejavu_10.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_dejavu_10_cyrillic.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_dejavu_10_latin_sup.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_dejavu_20.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_dejavu_20_cyrillic.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_dejavu_20_latin_sup.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_dejavu_30.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_dejavu_30_cyrillic.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_dejavu_30_latin_sup.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_dejavu_40.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_dejavu_40_cyrillic.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_dejavu_40_latin_sup.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_monospace_8.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_symbol_10.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_symbol_20.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_symbol_30.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_fonts/lv_font_symbol_40.c" />
+        </folder>
+        <folder Name="lv_hal">
+          <file file_name="../Source/lvgl/lvgl/lv_hal/lv_hal.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_hal/lv_hal_disp.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_hal/lv_hal_disp.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_hal/lv_hal_indev.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_hal/lv_hal_indev.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_hal/lv_hal_tick.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_hal/lv_hal_tick.h" />
+        </folder>
+        <folder Name="lv_misc">
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_anim.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_anim.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_area.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_area.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_circ.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_circ.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_color.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_color.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_font.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_font.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_fs.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_fs.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_gc.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_gc.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_ll.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_ll.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_log.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_log.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_math.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_math.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_mem.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_mem.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_symbol_def.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_task.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_task.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_templ.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_templ.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_txt.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_txt.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_ufs.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_misc/lv_ufs.h" />
+        </folder>
+        <folder Name="lv_objx">
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_arc.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_arc.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_bar.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_bar.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_btn.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_btn.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_btnm.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_btnm.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_calendar.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_calendar.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_canvas.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_canvas.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_cb.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_cb.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_chart.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_chart.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_cont.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_cont.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_ddlist.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_ddlist.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_gauge.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_gauge.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_img.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_img.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_imgbtn.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_imgbtn.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_kb.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_kb.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_label.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_label.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_led.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_led.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_line.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_line.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_list.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_list.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_lmeter.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_lmeter.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_mbox.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_mbox.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_objx_templ.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_objx_templ.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_page.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_page.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_preload.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_preload.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_roller.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_roller.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_slider.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_slider.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_spinbox.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_spinbox.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_sw.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_sw.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_ta.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_ta.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_table.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_table.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_tabview.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_tabview.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_tileview.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_tileview.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_win.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_objx/lv_win.h" />
+        </folder>
+        <folder Name="lv_porting">
+          <file file_name="../Source/lvgl/lvgl/lv_porting/lv_port_disp_templ.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_porting/lv_port_disp_templ.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_porting/lv_port_fs_templ.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_porting/lv_port_fs_templ.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_porting/lv_port_indev_templ.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_porting/lv_port_indev_templ.h" />
+        </folder>
+        <folder Name="lv_themes">
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_alien.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_alien.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_default.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_default.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_material.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_material.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_mono.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_mono.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_nemo.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_nemo.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_night.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_night.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_templ.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_templ.h" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_zen.c" />
+          <file file_name="../Source/lvgl/lvgl/lv_themes/lv_theme_zen.h" />
+        </folder>
+      </folder>
+      <folder Name="lv_drivers">
+        <folder Name="display">
+          <file file_name="../Source/lvgl/lv_drivers/display/stm32.c" />
+          <file file_name="../Source/lvgl/lv_drivers/display/stm32.h" />
+        </folder>
+        <folder Name="indev">
+          <file file_name="../Source/lvgl/lv_drivers/indev/touch.c" />
+          <file file_name="../Source/lvgl/lv_drivers/indev/touch.h" />
+        </folder>
+      </folder>
+      <folder Name="lv_examples">
+        <file file_name="../Source/lvgl/lv_examples/lv_tests/lv_test_theme/lv_test_theme_1.c" />
+      </folder>
+    </folder>
+    <folder Name="lwip">
+      <folder Name="api">
+        <file file_name="../Source/lwip/api/api_lib.c" />
+        <file file_name="../Source/lwip/api/api_msg.c" />
+        <file file_name="../Source/lwip/api/err.c" />
+        <file file_name="../Source/lwip/api/if_api.c" />
+        <file file_name="../Source/lwip/api/netbuf.c" />
+        <file file_name="../Source/lwip/api/netdb.c" />
+        <file file_name="../Source/lwip/api/netifapi.c" />
+        <file file_name="../Source/lwip/api/sockets.c" />
+        <file file_name="../Source/lwip/api/tcpip.c" />
+      </folder>
+      <folder Name="core">
+        <folder Name="ipv4">
+          <file file_name="../Source/lwip/core/ipv4/autoip.c" />
+          <file file_name="../Source/lwip/core/ipv4/dhcp.c" />
+          <file file_name="../Source/lwip/core/ipv4/etharp.c" />
+          <file file_name="../Source/lwip/core/ipv4/icmp.c" />
+          <file file_name="../Source/lwip/core/ipv4/igmp.c" />
+          <file file_name="../Source/lwip/core/ipv4/ip4.c" />
+          <file file_name="../Source/lwip/core/ipv4/ip4_addr.c" />
+          <file file_name="../Source/lwip/core/ipv4/ip4_frag.c" />
+        </folder>
+        <file file_name="../Source/lwip/core/altcp.c" />
+        <file file_name="../Source/lwip/core/altcp_alloc.c" />
+        <file file_name="../Source/lwip/core/altcp_tcp.c" />
+        <file file_name="../Source/lwip/core/def.c" />
+        <file file_name="../Source/lwip/core/dns.c" />
+        <file file_name="../Source/lwip/core/inet_chksum.c" />
+        <file file_name="../Source/lwip/core/init.c" />
+        <file file_name="../Source/lwip/core/ip.c" />
+        <file file_name="../Source/lwip/core/mem.c" />
+        <file file_name="../Source/lwip/core/memp.c" />
+        <file file_name="../Source/lwip/core/netif.c" />
+        <file file_name="../Source/lwip/core/pbuf.c" />
+        <file file_name="../Source/lwip/core/raw.c" />
+        <file file_name="../Source/lwip/core/stats.c" />
+        <file file_name="../Source/lwip/core/sys.c" />
+        <file file_name="../Source/lwip/core/tcp.c" />
+        <file file_name="../Source/lwip/core/tcp_in.c" />
+        <file file_name="../Source/lwip/core/tcp_out.c" />
+        <file file_name="../Source/lwip/core/timeouts.c" />
+        <file file_name="../Source/lwip/core/udp.c" />
+      </folder>
+      <folder Name="netif">
+        <file file_name="../Source/lwip/netif/ethernet.c" />
+        <file file_name="../Source/lwip/system/arch/sys_arch.c" />
+      </folder>
+    </folder>
+  </project>
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_optimization_level="None" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="None"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 1" />
+</solution>
